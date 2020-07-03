@@ -37,4 +37,9 @@ class Song
     result = self.find_by_name(name)
     result ? result : self.create_by_name(name)
   end
+
+  def self.alphabetical
+  end
+
+
 end
