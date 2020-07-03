@@ -37,9 +37,9 @@ class Song
     # binding.pry
     self.all.each do |song|
       if song.name == name
-        result = self.find_by_name(name)
+        result = self.find_by_name(song.name)
       else
-        result = self.create_by_name(name)
+        result = self.create_by_name(song.name)
       end
       result
     end
