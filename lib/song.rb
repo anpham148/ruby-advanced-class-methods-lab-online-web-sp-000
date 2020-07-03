@@ -36,7 +36,7 @@ class Song
   def self.find_or_create_by_name(name)
     # binding.pry
     self.all.each do |song|
-      if self.all.include?(song.name)
+      if song.name == name
         result = self.find_by_name(song.name)
       else
         result = self.create_by_name(song.name)
