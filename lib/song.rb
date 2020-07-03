@@ -40,7 +40,6 @@ class Song
         result = self.find_by_name(song.name)
       else
         result = self.create_by_name(song.name)
-
       end
       result
 
